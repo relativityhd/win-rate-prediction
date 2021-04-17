@@ -33,5 +33,5 @@ Die Information wird durch die Input-Neuronen aufgenommen und durch die Output-N
 * Verborgene Schicht: Die verborgene Schicht befindet sich zwischen der Eingabeschicht und der Ausgabeschicht. Während die Ein- und Ausgabeschicht lediglich aus einer Ebene bestehen, können beliebig viele Ebenen an Neuronen in der verborgenen Schicht vorhanden sein. Hier werden die empfangenen Informationen erneut gewichtet und von Neuron zu Neuron bis zur Ausgabeschicht weitergereicht. Die Gewichtung findet in jeder Ebene der verborgenen Schicht statt. Die genaue Prozessierung der Informationen ist jedoch nicht sichtbar. Daher stammt auch der Name, verborgene Schicht. 
 * Ausgabeschicht: Die Ausgabeschicht ist die letzte Schicht und schließt unmittelbar an die letzte Ebene der verborgenen Schicht an. Die Output-Neuronen beinhalten die resultierende Entscheidung, die als Informationsfluss hervorgeht.
 
-[img]: https://media.springernature.com/lw1000/springer-cms/rest/v1/img/17663890/v4/4by3?as=jpg
+![img](https://media.springernature.com/lw1000/springer-cms/rest/v1/img/17663890/v4/4by3?as=jpg)
 
