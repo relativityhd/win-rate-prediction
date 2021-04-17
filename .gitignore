@@ -130,3 +130,5 @@ dmypy.json
 
 # Excel Temp files
 ~$*.xlsx
+
+.idea
