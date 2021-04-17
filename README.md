@@ -12,7 +12,18 @@ Die Daten sind aus dem Spiel League of Legends (LOL).
 
 ## Data Management
 
-Als Daten
+Als Daten für unser Projekt wurden die Daten der letzten vier Seasons von LOL ausgewählt und für die weiterverarbeitung, durch die Bereinigung und erneute Formatierung von den Datensätzen, vorbereitet. Dadurch wird sichergestellt, dass alle für die Analyse verwendeten Daten von hoher Qualität sind.
+Der Datenaufbereitungsprozess beginnt mit der Identifizierung der benötigten Daten. Ein wichtiger Schritt nach der Datenerfassung ist die Ermittlung aller Datensätze. Dies dient dazu, die Daten zu verstehen und festzustellen, welche Maßnahmen nötig sind, um die Daten für einen bestimmten Zusammenhang nützlich zu machen.
+
+Die Datenbereinigung ist oft der zeitaufwendigste Teil des Datenaufbereitungsprozesses, aber dennoch extrem wichtig, um fehlerhafte Daten zu entfernen und Lücken zu schließen. Wichtige Aufgaben sind hier u. a.:
+
+* Entfernung von irrelevanten Daten und Ausreißern
+* Hinzufügen fehlender Werte
+* Anpassung der Daten an ein standardisiertes Muster
+
+Nach dieser Aufbereitung war es uns möglich mit diesen Daten weiterzuarbeiten und uns an das neuronale Netz zu setzen. Denn dieses kann nur qualitativ gut gelingen wenn die Daten dafür gut aufbereitet wurden. 
+
+
 
 ## Model Assembly
 
@@ -34,4 +45,12 @@ Die Information wird durch die Input-Neuronen aufgenommen und durch die Output-N
 * Ausgabeschicht: Die Ausgabeschicht ist die letzte Schicht und schließt unmittelbar an die letzte Ebene der verborgenen Schicht an. Die Output-Neuronen beinhalten die resultierende Entscheidung, die als Informationsfluss hervorgeht.
 
 ![img](https://media.springernature.com/lw1000/springer-cms/rest/v1/img/17663890/v4/4by3?as=jpg)
+
+Quelle:https://www.springerprofessional.de/neuronale-netze/kuenstliche-intelligenz/wie-funktionieren-kuenstliche-neuronale-netze-/17663746
+
+Quellen:
+https://datasolut.com/neuronale-netzwerke-einfuehrung/
+https://www.talend.com/de/resources/what-is-data-preparation/
+
+
 
