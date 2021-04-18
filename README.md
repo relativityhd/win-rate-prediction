@@ -7,7 +7,7 @@ Data Exploration Project
 In diesem Projekt soll anhand von gecleanten Spielerdaten der letzten vier Seasons und einem neuronalen Netz, die Win-Rate vorhergesagt werden. 
 Die Daten sind aus dem Spiel League of Legends (LOL). 
 
-*Am besten eine kurze Beschreibung des Spiels*
+*Am besten eine kurze Beschreibung des Spiels* !!!!!!!!!
 
 
 ## Data Management
