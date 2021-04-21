@@ -239,7 +239,7 @@ export default {
   methods: {
     predict() {
       axios
-        .get('http://localhost:8000/api/predict', {
+        .get('/api/predict', {
           params: {
             games: this.games,
             kda: this.kda,
