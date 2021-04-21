@@ -178,6 +178,14 @@
               hint="Total Kills without Teammate Participation"
             ></v-text-field>
           </v-col>
+          <v-col class="mb-4" cols="3">
+            <v-text-field
+              v-model="gpm"
+              :rules="[rules.required, rules.number]"
+              label="Gold / min"
+              hint="Gold per minute per game"
+            ></v-text-field>
+          </v-col>
         </v-row>
 
         <v-row justify="center">
@@ -200,26 +208,27 @@ export default {
   name: 'Predictor',
 
   data: () => ({
-    winrate: 5,
+    winrate: 0,
     err: false,
-    games: undefined,
-    kda: undefined,
-    avgk: undefined,
-    avgd: undefined,
-    avga: undefined,
-    csm: undefined,
-    dpm: undefined,
-    kp: undefined,
-    dmgp: undefined,
-    avgwpm: undefined,
-    avgwcpm: undefined,
-    avgvwpm: undefined,
-    gdiff: undefined,
-    csdiff: undefined,
-    xpdiff: undefined,
-    fb: undefined,
-    fbv: undefined,
-    solok: undefined,
+    games: 100,
+    kda: 2.7,
+    avgk: 2.1,
+    avgd: 2.6,
+    avga: 5.1,
+    csm: 8.1,
+    gpm: 367,
+    kp: 0.62,
+    dmgp: 0.23,
+    dpm: 398,
+    avgwpm: 0.51,
+    avgwcpm: 0.17,
+    avgvwpm: 0.14,
+    gdiff: -23,
+    csdiff: 1,
+    xpdiff: 125,
+    fb: 0.24,
+    fbv: 0.16,
+    solok: 15,
     rules: {
       required: (value) => !!value || value === 0 || 'Required.',
       number: (value) => !isNaN(value) || 'Must be a number.',
@@ -230,7 +239,7 @@ export default {
   methods: {
     predict() {
       axios
-        .get('/api/predict', {
+        .get('http://localhost:8000/api/predict', {
           params: {
             games: this.games,
             kda: this.kda,
@@ -239,6 +248,7 @@ export default {
             avga: this.avga,
             csm: this.csm,
             dpm: this.dpm,
+            gpm: this.gpm,
             kp: this.kp,
             dmgp: this.dmgp,
             avgwpm: this.avgwpm,
@@ -257,8 +267,8 @@ export default {
           this.winrate = response.data['win rate']
           this.err = false
         })
-        .catch(() => {
-          console.log('not so good')
+        .catch((e) => {
+          console.log(e)
           this.err = true
         })
     }

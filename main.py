@@ -27,8 +27,8 @@ app = FastAPI()
 
 
 @app.get("/api/predict")
-def predict(games: int, kda: float, avgk: float, avgd: float, avga: float, csm: float, dpm: float, kp: float, dmgp: float, avgwpm: float, avgwcpm: float, avgvwpm: float, gdiff: int, csdiff: int, xpdiff: int, fb: float, fbv: float, solok: int):
-    t1 = tensor([games, kda, avgk, avgd, avga, csm, dpm, kp, dmgp, 400, avgwpm, avgwcpm,
+def predict(games: int, kda: float, avgk: float, avgd: float, avga: float, csm: float, gpm: float, kp: float, dmgp: float, dpm: float, avgwpm: float, avgwcpm: float, avgvwpm: float, gdiff: int, csdiff: int, xpdiff: int, fb: float, fbv: float, solok: int):
+    t1 = tensor([games, kda, avgk, avgd, avga, csm, gpm, kp, dmgp, dpm, avgwpm, avgwcpm,
                 avgvwpm, gdiff, csdiff, xpdiff, fb, fbv, solok], device=device).double().unsqueeze(0)
     res = model(t1).item()
     print(res)
