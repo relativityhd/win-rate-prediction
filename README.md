@@ -4,14 +4,14 @@ Data Exploration Project
 
 ## Projekt
 
-In diesem Projekt soll anhand von gecleanten Spielerdaten der letzten vier Seasons und einem neuronalen Netz, die Win-Rate vorhergesagt werden.
-Die Daten sind aus dem Spiel League of Legends (LOL).
+In diesem Projekt soll anhand von gecleanten Spielerdaten der letzten vier Seasons und einem neuronalen Netz, die Win Rate vorhergesagt werden.
+Die Daten sind aus dem Spiel League of Legends (LoL).
 
 _Am besten eine kurze Beschreibung des Spiels_ !!!!!!!!!
 
 ## Data Management
 
-Als Daten für unser Projekt wurden die Daten der letzten vier Seasons von LOL ausgewählt und für die weiterverarbeitung, durch die Bereinigung und erneute Formatierung von den Datensätzen, vorbereitet. Dadurch wird sichergestellt, dass alle für die Analyse verwendeten Daten von hoher Qualität sind.
+Als Daten für unser Projekt wurden die Daten der letzten vier Seasons von LoL ausgewählt und für die Weiterverarbeitung, durch die Bereinigung und erneute Formatierung von den Datensätzen, vorbereitet. Dadurch wird sichergestellt, dass alle für die Analyse verwendeten Daten von hoher Qualität sind.
 Der Datenaufbereitungsprozess beginnt mit der Identifizierung der benötigten Daten. Ein wichtiger Schritt nach der Datenerfassung ist die Ermittlung aller Datensätze. Dies dient dazu, die Daten zu verstehen und festzustellen, welche Maßnahmen nötig sind, um die Daten für einen bestimmten Zusammenhang nützlich zu machen.
 
 Die Datenbereinigung ist oft der zeitaufwendigste Teil des Datenaufbereitungsprozesses, aber dennoch extrem wichtig, um fehlerhafte Daten zu entfernen und Lücken zu schließen. Wichtige Aufgaben sind hier u. a.:
@@ -28,9 +28,9 @@ Künstliche Neuronale Netze (KNN) sind dem menschlichen Gehirn nachempfunden und
 
 ### Künstliches Neuronales Netzwerk
 
-Künstliche Neuronale Netze sind Algorithmen, die dem menschlichen Gehirn nachempfunden sind. Dieses abstrahierte Modell von verbundenen künstlichen Neuronen, ermöglicht es, komplexe Aufgaben aus den Bereichen Statistik, Informatik und Wirtschaft durch Computer zu lösen.
+Künstliche Neuronale Netze sind Netze aus künstlichen Neuronen, die dem menschlichen Gehirn nachempfunden sind. Dieses abstrahierte Modell von verbundenen künstlichen Neuronen ermöglicht es, komplexe Aufgaben aus den Bereichen Statistik, Informatik und Wirtschaft durch Computer zu lösen.
 
-Durch Neuronale Netze lassen sich in unserem Beispiel Tabellen interpretieren und Informationen oder Muster extrahieren, um diese auf unbekannte oder neue Daten anzuwenden. So lassen sich datengetrieben Vorhersagen für die Zukunft erstellen. In unserem Beispiel soll somit die win-rate vorhergesagt werden.
+Durch Neuronale Netze lassen sich in unserem Beispiel Tabellen interpretieren und Informationen oder Muster extrahieren, um diese auf unbekannte oder neue Daten anzuwenden. So lassen sich datengetrieben Vorhersagen für die Zukunft erstellen. In unserem Beispiel soll somit die Win Rate vorhergesagt werden.
 
 ### Aufbau eines künstlichen neuronalen Netzes
 
@@ -49,3 +49,4 @@ Quelle:<https://www.springerprofessional.de/neuronale-netze/kuenstliche-intellig
 Quellen:
 <https://datasolut.com/neuronale-netzwerke-einfuehrung/>
 <https://www.talend.com/de/resources/what-is-data-preparation/>
+<https://gol.gg/players/list/season-S11/split-Spring/tournament-ALL/>
