@@ -193,7 +193,7 @@
             <v-btn color="primary" elevation="2" @click="predict">Predict</v-btn>
             <v-divider></v-divider>
             <h2 v-if="err" class="headline font-weight-bold mb-3">Couldn't predict stuff :(</h2>
-            <h2 v-else class="headline font-weight-bold mb-3">Your win rate is: {{ winrate }}%</h2>
+            <h2 v-else class="headline font-weight-bold mb-3">Your win rate is: {{ winrate * 100 }}%</h2>
           </v-col>
         </v-row>
       </v-col>
@@ -217,8 +217,8 @@ export default {
     avga: 5.1,
     csm: 8.1,
     gpm: 367,
-    kp: 0.62,
-    dmgp: 0.23,
+    kp: 62,
+    dmgp: 23,
     dpm: 398,
     avgwpm: 0.51,
     avgwcpm: 0.17,
@@ -226,13 +226,13 @@ export default {
     gdiff: -23,
     csdiff: 1,
     xpdiff: 125,
-    fb: 0.24,
-    fbv: 0.16,
+    fb: 24,
+    fbv: 16,
     solok: 15,
     rules: {
       required: (value) => !!value || value === 0 || 'Required.',
       number: (value) => !isNaN(value) || 'Must be a number.',
-      percent: (value) => (!isNaN(value) && 0 <= value && value <= 1) || 'Must between 0 and 1.'
+      percent: (value) => (!isNaN(value) && 0 <= value && value <= 100) || 'Must between 0 and 1.'
     }
   }),
 
@@ -249,16 +249,16 @@ export default {
             csm: this.csm,
             dpm: this.dpm,
             gpm: this.gpm,
-            kp: this.kp,
-            dmgp: this.dmgp,
+            kp: this.kp / 100,
+            dmgp: this.dmgp / 100,
             avgwpm: this.avgwpm,
             avgwcpm: this.avgwcpm,
             avgvwpm: this.avgvwpm,
             gdiff: this.gdiff,
             csdiff: this.csdiff,
             xpdiff: this.xpdiff,
-            fb: this.fb,
-            fbv: this.fbv,
+            fb: this.fb / 100,
+            fbv: this.fbv / 100,
             solok: this.solok
           }
         })

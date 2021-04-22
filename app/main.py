@@ -18,15 +18,11 @@ class LolProNetwork(nn.Module):
 
 
 _device = 'cuda' if cuda.is_available() else 'cpu'
-print(f"Device is {_device}")
 
 model = LolProNetwork().to(_device).double()
-print("Inititalized model")
 model.load_state_dict(load('./model/lol_predicter_v1',
                       map_location=device(_device)))
-print("Loaded dict")
 model.eval()
-print("Loaded model")
 
 app = FastAPI()
 
