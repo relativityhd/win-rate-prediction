@@ -1,6 +1,13 @@
-# win-rate-prediction
+# Data Exploration Project
 
-Data Exploration Project
+In diesem Projekt soll anhand von gecleanten Spielerdaten der letzten vier Seasons und einem neuronalen Netz, die Win Rate vorhergesagt werden.
+Die Daten sind aus dem Spiel League of Legends (LoL).
+
+League of Legends ist ein teambasiertes Strategiespiel, in dem zwei Teams mit je fünf so genannten Champions gegeneinander antreten, um die jeweils andere Basis zu zerstören. Man hat die Wahl aus über 140 Champions, welche alle unterschiedliche Fähigkeiten aufweisen.
+Der Nexus ist das Herzstück der Basis beider Teams. Das erste Team, das den gegnerischen Nexus zerstört gewinnt. Da dies vom gegnerischen Team verhindert wird, müssen deren Champions getötet werden um den Nexus, und die Verteidigungstürme die diesen beschützen, zu zerstören. Um die Oberhand über die gegnerischen Champions zu gewinnen, können Items mit Gold gekauft werden.
+Um Gold zu erhöten können gegnerische Creeps und Champions getötet werden, kann bei einem Kill geholfen werden oder Verteidigungsgebäude zerstört werden.
+Mit diesen Mechanismen können ebenfalls Erfahrungspunkte gesammelt werden. Wenn Champions eine bestimmte Menge Erfahrung gewonnen haben, steigen sie eine Stufe auf und können Fähigkeiten freischalten oder verbessern und damit ihre Werte erhöhen.
+League of Legends besitzt mitlerweile eine große, internationale Esport-Szene und somit besteht auch ein Bedarf an Analysen, ähnlich wie im Fußball, Basketball oder anderen Sportarten.
 
 ## Local Setup
 
@@ -19,14 +26,7 @@ docker run -d -p 80:80 data-exploration
 
 ## Projekt
 
-In diesem Projekt soll anhand von gecleanten Spielerdaten der letzten vier Seasons und einem neuronalen Netz, die Win Rate vorhergesagt werden.
-Die Daten sind aus dem Spiel League of Legends (LoL).
-
-League of Legends ist ein teambasiertes Strategiespiel, in dem zwei Teams mit je fünf so genannten Champions gegeneinander antreten, um die jeweils andere Basis zu zerstören. Man hat die Wahl aus über 140 Champions, welche alle unterschiedliche Fähigkeiten aufweisen.
-Der Nexus ist das Herzstück der Basis beider Teams. Das erste Team, das den gegnerischen Nexus zerstört gewinnt. Da dies vom gegnerischen Team verhindert wird, müssen deren Champions getötet werden um den Nexus, und die Verteidigungstürme die diesen beschützen, zu zerstören. Um die Oberhand über die gegnerischen Champions zu gewinnen, können Items mit Gold gekauft werden.
-Um Gold zu erhöten können gegnerische Creeps und Champions getötet werden, kann bei einem Kill geholfen werden oder Verteidigungsgebäude zerstört werden.
-Mit diesen Mechanismen können ebenfalls Erfahrungspunkte gesammelt werden. Wenn Champions eine bestimmte Menge Erfahrung gewonnen haben, steigen sie eine Stufe auf und können Fähigkeiten freischalten oder verbessern und damit ihre Werte erhöhen.
-League of Legends besitzt mitlerweile eine große, internationale Esport-Szene und somit besteht auch ein Bedarf an Analysen, ähnlich wie im Fußball, Basketball oder anderen Sportarten.
+Zuerst wurden Daten von [Games of Legends](https://gol.gg/players/list/season-S11/split-Spring/tournament-ALL/) allokiert und in einer Excel Tabelle gespeichert. Diese Daten wurden daraufhin bereinigt und mit Ihnen ein Neuronales Netzt trainiert.
 
 ### Data Management
 
